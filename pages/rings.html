@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"/>
+  </head>
+<body>
+   
+    <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.118.2">
+        <title>Album example · Bootstrap v5.3</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    
+        
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+             }
+
+             ,container{
+              margin-top: 0%;
+             }
+
+
+
+           @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          } 
+    
+          .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+    
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+    
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+    
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+    
+          .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+          }
+    
+          .bd-mode-toggle {
+            z-index: 1500;
+          }
+    
+          .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+          }
+        </style>
+    
+        
+      </head>
+      <body data-new-gr-c-s-check-loaded="14.1145.0" data-gr-ext-installed="">
+        <h1 style="font-family:'Times New Roman', Times, serif;background-color:#B6D0E2 ; height:80px; padding-top:18px;"><center>BEADS AND CO.</center></h1>
+        <header class="py-3 mb-3 border-bottom">
+            <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+         <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+              </svg>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="../home.html">Home</a></li>
+              <li><a class="dropdown-item" href="./bracelets.html">Bracelets</a></li>
+              <li><a class="dropdown-item" href="./rings.html">Rings</a></li>
+              <li><a class="dropdown-item" href="./watches.html">Watches</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../dropdown/story.html">Our Story</a></li>
+              <li><a class="dropdown-item" href="../dropdown/cart.html">View Cart</a></li>
+            </ul>
+          </div>
+              <div class="d-flex align-items-center">
+                <form class="w-100 me-3" role="search">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </header>
+
+    
+    <main>
+    
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">ENGAGEMENT AND BAND RINGS</h1>
+            <p class="lead text-body-secondary">Rings are timeless symbols of love and commitment.A diamond is the gemstone of choice, symbolizing strength and brilliance.</p>
+            
+          </div>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <!-- Replace the rect and text with the image element -->
+                    <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-novoemerald-cut-sapphire-ring-71118940_1032272_ED.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+                    
+                  </svg>
+                
+                  <p class="card-text"><h3>Emerald Sapphire Ring</h3></p>
+                  <p>Crafted with clean, contemporary lines, this timeless Tiffany Novo® ring is designed with an emerald-cut center sapphire .</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-novo-emerald-cut-sapphire-ring-71118940/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 20k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-foreverband-ring-17045962_1039863_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3>Band Ring</h3></p>
+                  <p>Tiffany Forever ring celebrates the eternal bond of lifelong commitment. A half-circle of round diamonds traces this band.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-forever-band-ring-GRP00108/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 10k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-novo-emerald-cut-engagement-ring-with-a-pav-diamond-platinum-band-63375829_995678_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3> Classic Diamond Ring</h3></p>
+                  <p>A slender band of micro-pavé-set diamonds lends the brilliant Tiffany Novo® a distinctly romantic sensibility with a modern edge.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/engagement/engagement-rings/tiffany-novo-emerald-cut-engagement-ring-with-a-pav-diamond-platinum-band-GRP10882/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price-according to size of diamond</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriaband-ring-19286797_1047806_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3> Fire Band Ring </h3></p>
+                  <p>Inspired by the fire of our superlative diamonds, Tiffany uses a unique combination of cuts for a distinctly romantic sensibility.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-victoria-band-ring-GRP00321/"><button type="button" class="btn btn-sm btn-outline-secondary">View Product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 20.8k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-soleste-emerald-cut-halo-engagement-ring-with-a-diamond-platinum-band-31808561_995809_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3>Soleste® Ring</h3> </p>
+                  <p>Tiffany Soleste® ring with diamonds and a striking emerald center stone features concentric rows of parallel facets.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/engagement/engagement-rings/tiffany-soleste-emerald-cut-halo-engagement-ring-with-a-diamond-platinum-band-GRP10868/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price-according to size of diamond</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-solestering-60572585_1021581_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3>Green Emerald Ring</h3></p>
+                  <p>Ring in platinum with diamonds and an emerald. This ring has an excellent finishing and looks absolutely stunning.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-soleste-ring-GRP09943/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 17.8k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-solestetanzanite-ring-71257819_1051923_ED.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3>Tanzanite Ring</h3></p>
+                  <p>Tiffany Soleste® collection features vibrant stones encircled diamonds.Tanzanite is known for its intense blues to purple blues.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-soleste-tanzanite-ring-GRP12279/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 15k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-solestev-ring-60876142_979385_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3>V Ring</h3></p>
+                  <p>Tiffany Soleste V is crafted with clean lines and a slim silhouette. Diamonds are hand set in this elegant band.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-soleste-v-ring-GRP10091/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                     
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 2k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergerrope-two-row-ring-25963288_1044072_ED_M.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <p class="card-text"><h3>Rope Two-row Ring</h3></p>
+                  <p>Brilliant diamonds illuminate this delicate ring. This ring is 18k gold and platinum with round brilliant diamonds with carat total weight .30</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/rings/tiffany-co-schlumberger-rope-two-row-ring-GRP03754/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price 6.4k$</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+    <footer class="py-5" style="padding:40px">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>OUR COMPANY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="../home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="../dropdown/story.html" class="nav-link p-0 text-body-secondary">Our Story</a></li>
+         
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>SUSTAINABILITY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.tiffany.com/sustainability/" class="nav-link p-0 text-body-secondary">sustainability</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ's</a></li>
+      
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>ORDER DETAILS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">track your order</a></li>
+            <li class="nav-item mb-2"><a href="../dropdown/login.html" class="nav-link p-0 text-body-secondary">login to your account</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gift Cards</a></li>
+          
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Be the first to know about exciting new designs, trends and much more.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 BEADS company. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        
+    
+    </body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

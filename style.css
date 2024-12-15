@@ -1,0 +1,33 @@
+footer{
+    background-color:#85a3b9;
+}
+
+section{
+    background-color: #85a3b9;
+}
+h1,h2{
+   font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-family: 'Delicious Handrawn', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+*{
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+small{
+    color:#85a3b9;
+}
+
+.btn{
+    background-color:#85a3b9 ;
+    color:#112d41;
+}

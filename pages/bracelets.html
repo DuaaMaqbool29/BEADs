@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracelets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"/>
+  </head>
+<body>
+    <html lang="en" data-bs-theme="light"><head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.118.2">
+        <title>Album example · Bootstrap v5.3</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    
+        
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+    
+    
+        <style>
+
+      
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+    
+          .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+    
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+    
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+    
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+    
+          .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+          }
+    
+          .bd-mode-toggle {
+            z-index: 1500;
+          }
+    
+          .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+          }
+        </style>
+    
+        
+      </head>
+      <body data-new-gr-c-s-check-loaded="14.1048.0" data-gr-ext-installed="">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div> -->
+        <h1 style="font-family:'Times New Roman', Times, serif;background-color:#B6D0E2 ; height:80px; padding-top:18px; "><center>BEADS AND CO.</center></h1>
+    <header class="py-3 mb-3 border-bottom">
+        <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+     <div class="flex-shrink-0 dropdown">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="../home.html">Home</a></li>
+          <li><a class="dropdown-item" href="./bracelets.html">Bracelets</a></li>
+          <li><a class="dropdown-item" href="./rings.html">Rings</a></li>
+          <li><a class="dropdown-item" href="./watches.html">Watches</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="../dropdown/story.html">Our Story</a></li>
+          <li><a class="dropdown-item" href="../dropdown/cart.html">View Cart</a></li>
+        </ul>
+      </div>
+          <div class="d-flex align-items-center">
+            <form class="w-100 me-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </header>
+    <!-- <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>Bracelets</h4>
+              <p class="text-body-secondary">It’s all in the wrist. Our collection of bracelets features classic silhouettes and designs that push the boundaries of the imagination. Express your maximalist side with a strong stack that can’t help but turn heads: a diamond tennis bracelet, chain link designs and polished bangles. If you want to make a powerful yet pared back statement, try wearing a wide cuff on each wrist. For a subtle approach, a few delicate styles in narrow widths always add up to something unexpected. When it comes to BEADS, make your own style rules. </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>BEADS</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header> -->
+    
+    <main>
+    
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light"><b>BRACELETS</b></h1>
+            <p class="lead text-body-secondary">Worn on their own, as a pair or around the wrist, the bracelets designed by BEADS are delicate, feminine collectible treasures.</p>
+            <p>
+              <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-edgehinged-bypass-bangle-71041441_1050417_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>Hinged Bypass Bangle</h3> </p>
+                  <p>The BEADS Edge collection is defined by a signature gold accent that joins together multiple rows of round brilliant diamonds. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-edge-hinged-bypass-bangle-GRP12257/" ><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                    </div>
+                    <small class="text-body-secondary">Price $25k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriavine-hinged-bangle-69524419_1028943_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>Vine Hinged Bangle</h3></p>
+                  <p> This bangle is gold that features a contrast of sandblasted finishes.Round diamonds set in an alternating pattern play off the light.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                  <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-victoria-vine-hinged-bangle-GRP12066/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                    </div>
+                    <small class="text-body-secondary"> Price $19k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlarge-link-bracelet-70751046_1047985_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>Large Link Bracelet</h3></p>
+                  <p>This 18k rose gold bracelet features the collection’s signature gauge links in a striking contrast of metal and pavé diamonds.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-hardwear-large-link-bracelet-GRP12260/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                    </div>
+                    <small class="text-body-secondary">Price $40k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-ttrue-narrow-hinged-bangle-68127637_1026071_SV_1_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3> Narrow Hinged Bangle</h3></p>
+                  <p>Designed with a faceted finish, this intricate hinged bangle features an alternating pattern that echoes the collection’s iconic motif.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                   <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-t-true-narrow-hinged-bangle-GRP12207/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                    </div>
+                    <small class="text-body-secondary">Price $22k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-metrothree-row-hinged-bangle-18967529_1017530_AV_4_M.jpg?&op_usm=2.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>Three-row Hinged Bang</h3></p>
+                  <p> The BEADS Metro collection twinkles like a nighttime city skyline. Dazzling diamonds accentuate this bangle's simple design.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-metro-three-row-hinged-bangle-GRP05030/"> <button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $30k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-victoriatennis-bracelet-38051148_1008123_SV_1.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>Tennis Bracelet</h3></p>
+                  <p> BEADS uses a unique combination of cuts.Classic pearls complement striking diamonds in this bracelet. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-victoria-bracelet-38051148/"> <button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                    
+                    </div>
+                    <small class="text-body-secondary">Price $15k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumberger36-stone-bracelet-15149582_1066482_AV_2_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>36 Stone Bracelet</h3></p>
+                  <p>BEADS visionary creations are among the world’s most intricate design. This striking bracelet makes a dazzling statement.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-co-schlumberger-36-stone-bracelet-15149582/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      </div>
+                    <small class="text-body-secondary">Price $35k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-1837makers-narrow-cuff-in-sterling-silver-63449121_1003266_AV_3_M.jpg?&op_usm=1.0,1.0,6.0&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>Silver Narrow Cuff </h3></p>
+                  <p>This simple yet bold cuff is designed in solid sterling silver. Crafted with a makers symbol inspired by the renowned BEADS shop.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-1837-makers-narrow-cuff-in-sterling-silver-GRP11145/"> <button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                     
+                    </div>
+                    <small class="text-body-secondary">Price $10k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-tt1-hinged-bangle-67792858_1008957_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+                <div class="card-body">
+                  <p class="card-text"><h3>T1 Hinged Bangle</h3></p>
+                  <p>Wrapped around the wearer in an unbroken circle,this bangle features scintillating diamonds and a strong motif at the center. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <a href="https://www.tiffany.com/jewelry/bracelets/tiffany-t-t1-wide-diamond-hinged-bangle-GRP11293/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                     
+                    </div>
+                    <small class="text-body-secondary">price $37k</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+   
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        
+    
+    <iframe src="https://mozbar.moz.com/bartender/third-party/start" style="display:none"></iframe>
+    </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+
+
+    <footer class="py-5" style="padding:40px">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>OUR COMPANY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="../home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="../dropdown/story.html" class="nav-link p-0 text-body-secondary">Our Story</a></li>
+         
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>SUSTAINABILITY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.tiffany.com/sustainability/" class="nav-link p-0 text-body-secondary">sustainability</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ's</a></li>
+      
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>ORDER DETAILS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">track your order</a></li>
+            <li class="nav-item mb-2"><a href="../dropdown/login.html" class="nav-link p-0 text-body-secondary">login to your account</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gift Cards</a></li>
+          
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Be the first to know about exciting new designs, trends and much more.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 BEADS company. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

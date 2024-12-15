@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"/>
+  </head>
+<body>
+   
+    <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.118.2">
+        <title>Watches</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    
+        
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+             }
+
+             .container{
+              margin-top: 0%;
+             }
+
+
+
+           @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          } 
+    
+          .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+    
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+    
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+    
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+    
+          .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+          }
+    
+          .bd-mode-toggle {
+            z-index: 1500;
+          }
+    
+          .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+          }
+        </style>
+    
+    
+    
+    <h1 style="font-family:'Times New Roman', Times, serif;background-color:#B6D0E2 ; height:80px; padding-top:18px; "><center>BEADS AND CO.</center></h1>
+    <header class="py-3 mb-3 border-bottom">
+        <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+     <div class="flex-shrink-0 dropdown">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+          </svg>
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="../home.html">Home</a></li>
+          <li><a class="dropdown-item" href="./bracelets.html">Bracelets</a></li>
+          <li><a class="dropdown-item" href="./rings.html">Rings</a></li>
+          <li><a class="dropdown-item" href="./watches.html">Watches</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="../dropdown/story.html">Our Story</a></li>
+          <li><a class="dropdown-item" href="../dropdown/cart.html">View Cart</a></li>
+        </ul>
+      </div>
+          <div class="d-flex align-items-center">
+            <form class="w-100 me-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </header>
+        
+      </head>
+      <body data-new-gr-c-s-check-loaded="14.1145.0" data-gr-ext-installed="">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        
+    
+  
+    
+    <main>
+    
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Fine Watches</h1>
+            <p class="lead text-body-secondary">BEADS and Co. watches have precise
+               craftmanship.Discover sleek everyday and statement 
+              watches that only get better with time.</p>
+         
+          </div>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <!-- Replace the rect and text with the image element -->
+                    <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearwatch-73331277_1057975_ED_M.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+                    
+                  </svg>
+                
+                  <h3>Sterling With Diamonds</h3>
+                  <p>Handcrafted in Switzerland, each watch features brilliant diamonds. This sterling silver and steel watch features a BEADS Blue® dial.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/tiffany-hardwear-watch-GRP12333/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $3,800</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearwatch-73297818_1057917_ED_M.jpg?defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3>Rose Gold & Diamonds</h3>
+                  <p> This 18k rose gold watch features pavé diamonds and a black lacquer dial. A hidden clasp creates a streamlined design.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/tiffany-hardwear-watch-GRP12334/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $29,000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearwatch-73332117_1057980_ED_M.jpg?defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3>White Mother Of Pearl</h3>
+                  <p> This 18k rose gold watch features a white mother-of-pearl dial. The faceted sapphire-glass crystal evokes the unique shape.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/tiffany-hardwear-watch-GRP12335/">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $18,000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-eternity28-mm-round-watch-73580641_1063345_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3> 28 MM Round Watch</h3>
+                  <p>BEADS Eternity watches remind us to live in the now. Inspired by a series of vintage BEADS.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/tiffany-eternity-28-mm-round-watch-73580641/"><button type="button" class="btn btn-sm btn-outline-secondary">View Product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $29,000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-eternity28-mm-cushion-shaped-watch-73580811_1063357_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3>28 MM Cushion Watch</h3> 
+                  <p>The watch’s crown is inspired by the BEADS® Setting engagement ring and adopts its iconic six-prong. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/tiffany-eternity-28-mm-cushion-shaped-watch-73580811/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $32,000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-eternity28-mm-cushion-shaped-watch-73580846_1063363_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3>28 MM White Gold</h3>
+                  <p>This white gold watch features a black brushed calf strap set with round brilliant diamonds on the buckle.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/tiffany-eternity-28-mm-cushion-shaped-watch-73580846/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $34,000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/atlas34-mm-watch-69291767_1022267_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3>Diamonds & Blue</h3>
+                  <p>The Atlas® watch collection combines graphic clarity with functional elegance for pieces that are easy to wear every day.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/atlas-34-mm-watch-69291767/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $7,100</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/atlas2-hand-24-mm-watch-69291619_1015161_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                  <h3>Pink Mother Pearl</h3>
+                  <p>The Atlas® watch collection combines graphic clarity with functional elegance. A modern iteration of strong and elemental design.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/atlas-2-hand-24-mm-watch-69291619/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                     
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $6,700</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <!-- Replace the rect and text with the image element -->
+                  <image href="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/atlas2-hand-24-mm-watch-69291635_1015165_ED.jpg?&op_usm=1.5,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+              </svg>
+              
+                <div class="card-body">
+                 <h3>Gray Mother-of-pearl</h3>
+                 <p>The Atlas® watch collection combines graphic clarity with functional elegance. A modern iteration of strong and elemental design.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.tiffany.com/watches/womens-watches/atlas-2-hand-24-mm-watch-69291635/"><button type="button" class="btn btn-sm btn-outline-secondary">View product</button></a>
+                      
+                      
+                    </div>
+                    <small class="text-body-secondary">Price $6,700</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    <center>
+    <footer class="py-5" style="padding:40px">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>OUR COMPANY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="../home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="../dropdown/story.html" class="nav-link p-0 text-body-secondary">Our Story</a></li>
+         
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>SUSTAINABILITY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.tiffany.com/sustainability/" class="nav-link p-0 text-body-secondary">sustainability</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ's</a></li>
+      
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>ORDER DETAILS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">track your order</a></li>
+            <li class="nav-item mb-2"><a href="../dropdown/login.html" class="nav-link p-0 text-body-secondary">login to your account</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gift Cards</a></li>
+          
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Be the first to know about exciting new designs, trends and much more.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+       <p><center>© 2023 BEADS company. All rights reserved.</center></p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div> 
+    </footer>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        
+    
+    </body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
